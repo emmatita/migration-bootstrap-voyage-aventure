@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageAventure - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">🌍 VoyageAventure</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contactez-nous</h1>
+            <p class="page-subtitle">Nous sommes là pour réaliser vos rêves de voyage</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Nos coordonnées</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>123 Rue des Voyages<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@voyageaventure.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Horaires</h3>
+                            <p>Lun-Ven: 9h-18h<br>Sam: 10h-16h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination souhaitée</label>
+                            <select id="destination" name="destination">
+                                <option value="">Choisissez une destination</option>
+                                <option value="europe">Europe</option>
+                                <option value="asie">Asie</option>
+                                <option value="amerique">Amérique</option>
+                                <option value="afrique">Afrique</option>
+                                <option value="oceanie">Océanie</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget approximatif</label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez votre budget</option>
+                                <option value="500-1000">500€ - 1000€</option>
+                                <option value="1000-2000">1000€ - 2000€</option>
+                                <option value="2000-3000">2000€ - 3000€</option>
+                                <option value="3000+">Plus de 3000€</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                J'accepte de recevoir des informations sur vos offres
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-button">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VoyageAventure</h3>
+                    <p>Votre partenaire voyage depuis 2015</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📧 info@voyageaventure.fr</p>
+                    <p>📞 01 23 45 67 89</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
