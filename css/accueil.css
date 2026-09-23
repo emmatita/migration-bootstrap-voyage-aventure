@@ -1,0 +1,25 @@
+/* accueil.css — spécifique à index.html (moins de 50 lignes) */
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 65vh;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(52, 152, 219, 0.35) !important;
+}
+
+/* Les icônes du carousel sont blanches par défaut : illisibles sur fond clair */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+}
+
+.carousel-indicators button {
+  background-color: var(--voyage-navy);
+}
