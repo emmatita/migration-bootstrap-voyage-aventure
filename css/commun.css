@@ -1,0 +1,30 @@
+/*
+  commun.css — styles partagés entre les 4 pages (navbar + footer).
+  Proposition de départ à valider avec le dev3 (composants partagés) :
+  n'y mettre QUE ce qui doit être strictement identique partout.
+*/
+
+:root {
+  --voyage-navy: #2c3e50;
+  --voyage-navy-dark: #34495e;
+  --voyage-accent: #3498db;
+}
+
+.navbar {
+  background-color: var(--voyage-navy);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--voyage-navy-dark);
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--voyage-navy);
+}

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoyageAventure - Destinations</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
+        <div class="container-fluid bg-secondary text-center">
             <h1 class="logo">🌍 VoyageAventure</h1>
             <nav class="main-nav">
                 <ul class="nav-list">
@@ -22,101 +24,155 @@
     </header>
 
     <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Nos destinations</h1>
-            <p class="page-subtitle">Explorez les merveilles du monde</p>
+        <div class="container-fluid text-center bg-primary-subtle mb-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="page-title">Nos destinations</h1>
+                    <p class="page-subtitle">Explorez les merveilles du monde</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="destinations">
-        <div class="container">
-            <div class="filters">
+        <div class="container text-center mb-5">
+            <div class="row gy-1">
                 <h3>Filtrer par continent</h3>
                 <div class="filter-buttons">
-                    <button class="filter-btn active">Tous</button>
-                    <button class="filter-btn">Europe</button>
-                    <button class="filter-btn">Asie</button>
-                    <button class="filter-btn">Amérique</button>
-                    <button class="filter-btn">Afrique</button>
+                    <button type="button" class="btn btn-primary px-2.5 py-1 rounded-pill mx-1">Tous</button>
+                    <button type="button" class="btn btn-secondary px-2.5 py-1 rounded-pill mx-1">Europe</button>
+                    <button type="button" class="btn btn-secondary px-2.5 py-1 rounded-pill mx-1">Asie</button>
+                    <button type="button" class="btn btn-secondary px-2.5 py-1 rounded-pill mx-1">Amérique</button>
+                    <button type="button" class="btn btn-secondary px-2.5 py-1 rounded-pill mx-1">Afrique</button>
                 </div>
             </div>
+        </div>
 
-            <div class="destinations-grid">
-                <div class="destination-card" data-continent="europe">
-                    <div class="destination-image">🏰</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Paris, France</h3>
-                        <p class="destination-description">La ville lumière vous attend</p>
-                        <div class="destination-details">
-                            <span class="duration">7 jours</span>
-                            <span class="price">À partir de 599€</span>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 gy-4">
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="europe">
+                        <img src="" class="card-img-top" alt="🏰">
+                        <div class="card-body">
+                            <h3 class="destination-title">Paris, France</h3>
+                            <p class="destination-description">La ville lumière vous attend</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    7 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 599€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
 
-                <div class="destination-card" data-continent="asie">
-                    <div class="destination-image">🏯</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Tokyo, Japon</h3>
-                        <p class="destination-description">Tradition et modernité</p>
-                        <div class="destination-details">
-                            <span class="duration">10 jours</span>
-                            <span class="price">À partir de 1299€</span>
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="asie">
+                        <img src="" class="card-img-top" alt="🏯">
+                        <div class="card-body">
+                            <h3 class="destination-title">Tokyo, Japon</h3>
+                            <p class="destination-description">Tradition et modernité</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    10 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 1299€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
 
-                <div class="destination-card" data-continent="amerique">
-                    <div class="destination-image">🗽</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">New York, USA</h3>
-                        <p class="destination-description">La ville qui ne dort jamais</p>
-                        <div class="destination-details">
-                            <span class="duration">5 jours</span>
-                            <span class="price">À partir de 899€</span>
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="amerique">
+                        <img src="" class="card-img-top" alt="🗽">
+                        <div class="card-body">
+                            <h3 class="destination-title">New York, USA</h3>
+                            <p class="destination-description">La ville qui ne dort jamais</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    5 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 899€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
 
-                <div class="destination-card" data-continent="afrique">
-                    <div class="destination-image">🦁</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Safari Kenya</h3>
-                        <p class="destination-description">Au cœur de la savane</p>
-                        <div class="destination-details">
-                            <span class="duration">12 jours</span>
-                            <span class="price">À partir de 1899€</span>
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="afrique">
+                        <img src="" class="card-img-top" alt="🦁">
+                        <div class="card-body">
+                            <h3 class="destination-title">Safari Kenya</h3>
+                            <p class="destination-description">Au cœur de la savane</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    12 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 1899€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
 
-                <div class="destination-card" data-continent="europe">
-                    <div class="destination-image">🏛️</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Rome, Italie</h3>
-                        <p class="destination-description">La ville éternelle</p>
-                        <div class="destination-details">
-                            <span class="duration">6 jours</span>
-                            <span class="price">À partir de 499€</span>
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="europe">
+                        <img src="" class="card-img-top" alt="🏛️">
+                        <div class="card-body">
+                            <h3 class="destination-title">Rome, Italie</h3>
+                            <p class="destination-description">La ville éternelle</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    6 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 499€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
 
-                <div class="destination-card" data-continent="asie">
-                    <div class="destination-image">🕌</div>
-                    <div class="destination-content">
-                        <h3 class="destination-title">Bali, Indonésie</h3>
-                        <p class="destination-description">Paradis tropical</p>
-                        <div class="destination-details">
-                            <span class="duration">14 jours</span>
-                            <span class="price">À partir de 999€</span>
+                <div class="col">
+                    <div class="card border-0 shadow" data-continent="asie">
+                        <img src="" class="card-img-top" alt="🕌">
+                        <div class="card-body">
+                            <h3 class="destination-title">Bali, Indonésie</h3>
+                            <p class="destination-description">Paradis tropical</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                    14 jours
+                                    </div>
+                                    <div class="col" style="color: red; font-family: Helvetica, sans-serif">
+                                    À partir de 999€
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir détails</a>
                         </div>
-                        <button class="destination-btn">Voir détails</button>
                     </div>
                 </div>
             </div>
@@ -124,7 +180,7 @@
     </section>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="container-fluid bg-secondary mt-5">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>VoyageAventure</h3>
@@ -138,5 +194,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
