@@ -4,130 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoyageAventure - À propos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        :root {
+            --bs-primary: #3498db;
+            --bs-primary-rgb: 52, 152, 219;
+            --bs-secondary: #34495e;
+            --bs-secondary-rgb: 52, 73, 94;
+            --bs-dark: #2c3e50;
+            --bs-dark-rgb: 44, 62, 80;
+            --bs-success: #27ae60;
+            --bs-success-rgb: 39, 174, 96;
+            --bs-danger: #e74c3c;
+            --bs-danger-rgb: 231, 76, 60;
+            --bs-light: #ecf0f1;
+            --bs-light-rgb: 236, 240, 241;
+            --bs-body-bg: #f8f9fa;
+            --bs-body-color: #333;
+            --bs-body-font-family: Arial, sans-serif;
+            --bs-link-color: var(--bs-primary);
+        }
+        .btn-danger {
+            --bs-btn-bg: var(--bs-danger);
+            --bs-btn-border-color: var(--bs-danger);
+            --bs-btn-hover-bg: #c0392b;
+            --bs-btn-hover-border-color: #c0392b;
+        }
+        .btn-success {
+            --bs-btn-bg: var(--bs-success);
+            --bs-btn-border-color: var(--bs-success);
+            --bs-btn-hover-bg: #219a52;
+            --bs-btn-hover-border-color: #219a52;
+        }
+        .navbar-dark .nav-link.active { 
+            background-color: var(--bs-secondary); 
+            border-radius: .375rem; 
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <h1 class="logo">🌍 VoyageAventure</h1>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
-                    <li><a href="apropos.html" class="nav-link active">À propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <a class="navbar-brand fw-bold fs-4" href="index.html">🌍 VoyageAventure</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-3">Accueil</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link px-3">Destinations</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link active px-3">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-3">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">À propos de nous</h1>
+            <p class="fs-5 opacity-75 mb-0">Notre passion pour les voyages au service de vos rêves</p>
         </div>
     </header>
 
-    <section class="page-header">
+    <section class="bg-white py-5">
         <div class="container">
-            <h1 class="page-title">À propos de nous</h1>
-            <p class="page-subtitle">Notre passion pour les voyages au service de vos rêves</p>
-        </div>
-    </section>
-
-    <section class="about-story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <h2>Notre histoire</h2>
-                    <p>Fondée en 2015 par une équipe de passionnés de voyage, VoyageAventure est née d'un rêve simple : rendre les voyages extraordinaires accessibles à tous.</p>
-                    <p>Depuis notre création, nous avons organisé plus de 5000 voyages et accompagné des milliers de voyageurs dans la découverte de destinations exceptionnelles.</p>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <h2 class="mb-4 text-dark">Notre histoire</h2>
+                    <p class="fs-5 mb-3">Fondée en 2015 par une équipe de passionnés de voyage, VoyageAventure est née d'un rêve simple : rendre les voyages extraordinaires accessibles à tous.</p>
+                    <p class="fs-5 mb-0">Depuis notre création, nous avons organisé plus de 5000 voyages et accompagné des milliers de voyageurs dans la découverte de destinations exceptionnelles.</p>
                 </div>
-                <div class="story-image">🗺️</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="values">
-        <div class="container">
-            <h2 class="section-title">Nos valeurs</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">🌟</div>
-                    <h3>Excellence</h3>
-                    <p>Nous sélectionnons rigoureusement nos partenaires pour vous garantir la meilleure expérience.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">🤝</div>
-                    <h3>Confiance</h3>
-                    <p>Transparence et honnêteté sont les fondements de notre relation avec nos clients.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">🌍</div>
-                    <h3>Respect</h3>
-                    <p>Nous promouvons un tourisme responsable respectueux des cultures locales.</p>
+                <div class="col-lg-5 text-center">
+                    <span class="display-1 opacity-25">🗺️</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team">
+    <section class="py-5" style="background-color: var(--bs-body-bg);">
         <div class="container">
-            <h2 class="section-title">Notre équipe</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-photo">👨‍💼</div>
-                    <h3 class="member-name">Jean Dupont</h3>
-                    <p class="member-role">Directeur général</p>
-                    <p class="member-description">15 ans d'expérience dans le tourisme</p>
+            <h2 class="text-center text-dark mb-5">Nos valeurs</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4 border-0">
+                        <div class="fs-1 mb-3">🌟</div>
+                        <h3 class="h5 text-dark">Excellence</h3>
+                        <p class="text-body-secondary mb-0">Nous sélectionnons rigoureusement nos partenaires pour vous garantir la meilleure expérience.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-photo">👩‍💼</div>
-                    <h3 class="member-name">Marie Martin</h3>
-                    <p class="member-role">Responsable destinations</p>
-                    <p class="member-description">Spécialiste des voyages en Asie</p>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4 border-0">
+                        <div class="fs-1 mb-3">🤝</div>
+                        <h3 class="h5 text-dark">Confiance</h3>
+                        <p class="text-body-secondary mb-0">Transparence et honnêteté sont les fondements de notre relation avec nos clients.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-photo">👨‍💻</div>
-                    <h3 class="member-name">Pierre Durand</h3>
-                    <p class="member-role">Conseiller voyage</p>
-                    <p class="member-description">Expert en voyages sur mesure</p>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4 border-0">
+                        <div class="fs-1 mb-3">🌍</div>
+                        <h3 class="h5 text-dark">Respect</h3>
+                        <p class="text-body-secondary mb-0">Nous promouvons un tourisme responsable respectueux des cultures locales.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="stats">
+    <section class="bg-white py-5">
         <div class="container">
-            <h2 class="section-title">VoyageAventure en chiffres</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">5000+</div>
-                    <div class="stat-label">Voyages organisés</div>
+            <h2 class="text-center text-dark mb-5">Notre équipe</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="fs-1 mb-3">👨‍💼</div>
+                    <h3 class="h5 text-dark mb-1">Jean Dupont</h3>
+                    <p class="text-primary fw-bold mb-1">Directeur général</p>
+                    <p class="text-body-secondary mb-0">15 ans d'expérience dans le tourisme</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Destinations</div>
+                <div class="col-md-4 text-center">
+                    <div class="fs-1 mb-3">👩‍💼</div>
+                    <h3 class="h5 text-dark mb-1">Marie Martin</h3>
+                    <p class="text-primary fw-bold mb-1">Responsable destinations</p>
+                    <p class="text-body-secondary mb-0">Spécialiste des voyages en Asie</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Clients satisfaits</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10</div>
-                    <div class="stat-label">Années d'expérience</div>
+                <div class="col-md-4 text-center">
+                    <div class="fs-1 mb-3">👨‍💻</div>
+                    <h3 class="h5 text-dark mb-1">Pierre Durand</h3>
+                    <p class="text-primary fw-bold mb-1">Conseiller voyage</p>
+                    <p class="text-body-secondary mb-0">Expert en voyages sur mesure</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="site-footer">
+    <section class="bg-dark text-white py-5">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>VoyageAventure</h3>
-                    <p>Votre partenaire voyage depuis 2015</p>
+            <h2 class="text-center text-white mb-5">VoyageAventure en chiffres</h2>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="display-5 fw-bold text-primary">5000+</div>
+                    <div class="fs-5 opacity-75">Voyages organisés</div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>📧 info@voyageaventure.fr</p>
-                    <p>📞 01 23 45 67 89</p>
+                <div class="col-6 col-md-3">
+                    <div class="display-5 fw-bold text-primary">50+</div>
+                    <div class="fs-5 opacity-75">Destinations</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="display-5 fw-bold text-primary">98%</div>
+                    <div class="fs-5 opacity-75">Clients satisfaits</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="display-5 fw-bold text-primary">10</div>
+                    <div class="fs-5 opacity-75">Années d'expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h3 class="h5 text-light">VoyageAventure</h3>
+                    <p class="mb-0">Votre partenaire voyage depuis 2015</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h5 text-light">Contact</h3>
+                    <p class="mb-1">📧 info@voyageaventure.fr</p>
+                    <p class="mb-0">📞 01 23 45 67 89</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
