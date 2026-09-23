@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,349 +8,414 @@
     <title>VoyageAventure - Contact</title>
 
     <!--<link rel="stylesheet" href="css/styles.css">-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
 </head>
 
 <body>
 
-    <header class="site-header">
+    <!-- HEADER -->
+    <header class="bg-primary text-white py-3">
 
-        <div class="container"> <!-- responsive centered container -->
+        <div class="container">
+            <!--  container centers the content and makes it responsive -->
 
-            <h1 class="logo">🌍 VoyageAventure</h1>
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- 
+                     d-flex = activates Flexbox
+                     justify-content-between = puts space between elements
+                     align-items-center = vertically centers elements -->
 
-            <nav class="main-nav">
+                <h1 class="h3 mb-0">
+                    🌍 VoyageAventure
+                </h1>
 
-                <ul class="nav-list">
+                <nav>
 
-                    <li>
-                        <a href="index.html" class="nav-link">
-                            Accueil
-                        </a>
-                        <!--  nav-link styles navigation links -->
-                    </li>
+                    <ul class="nav">
+                        <!--  nav creates a navigation list -->
 
-                    <li>
-                        <a href="destinations.html" class="nav-link">
-                            Destinations
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <!--  nav-item represents one navigation item -->
 
-                    <li>
-                        <a href="apropos.html" class="nav-link">
-                            À propos
-                        </a>
-                    </li>
+                            <a href="index.html" class="nav-link text-white">
+                                Accueil
+                            </a>
+                            <!-- 
+                                 nav-link = navigation link style
+                                 text-white = white text -->
+                        </li>
 
-                    <li>
-                        <a href="contact.html" class="nav-link active">
-                            Contact
-                        </a>
-                        <!--  active marks the current/active link -->
-                    </li>
+                        <li class="nav-item">
+                            <a href="destinations.html" class="nav-link text-white">
+                                Destinations
+                            </a>
+                        </li>
 
-                </ul>
+                        <li class="nav-item">
+                            <a href="apropos.html" class="nav-link text-white">
+                                À propos
+                            </a>
+                        </li>
 
-            </nav>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link text-white fw-bold active">
+                                Contact
+                            </a>
+                            <!-- 
+                                 fw-bold = bold text
+                                 active = marks the current page -->
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
 
         </div>
+
     </header>
 
 
-    <section class="page-header">
+    <!-- PAGE TITLE -->
+    <section class="bg-light py-5 text-center">
+        <!-- 
+             bg-light = light background
+             py-5 = vertical padding
+             text-center = centers text -->
 
-        <div class="container"> <!--  responsive centered container -->
+        <div class="container">
 
-            <h1 class="page-title">
+            <h1 class="display-5 fw-bold">
                 Contactez-nous
             </h1>
 
-            <p class="page-subtitle">
+            <p class="lead text-muted">
                 Nous sommes là pour réaliser vos rêves de voyage
             </p>
+            <!-- 
+                 lead = larger paragraph text
+                 text-muted = softer text color -->
 
         </div>
 
     </section>
 
 
-    <section class="contact-section">
+    <!-- CONTACT SECTION -->
+    <main class="container py-5">
+        <!-- 
+             container = responsive centered content
+             py-5 = vertical padding -->
 
-        <div class="container"> <!--  responsive centered container -->
-
-            <div class="contact-content">
-
-
-                <div class="contact-info">
-
-                    <h2>Nos coordonnées</h2>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            📍
-                        </div>
-
-                        <div class="contact-details">
-
-                            <h3>Adresse</h3>
-
-                            <p>
-                                123 Rue des Voyages<br>
-                                75001 Paris, France
-                            </p>
-
-                        </div>
-
-                    </div>
+        <div class="row g-5">
+            <!-- 
+                 row = Bootstrap grid row
+                 g-5 = space between columns -->
 
 
-                    <div class="contact-item">
+            <!-- CONTACT INFORMATION -->
+            <div class="col-md-5">
+                <!-- 
+                     col-md-5 = takes 5 of 12 columns on medium screens and bigger -->
 
-                        <div class="contact-icon">
-                            📞
-                        </div>
-
-                        <div class="contact-details">
-
-                            <h3>Téléphone</h3>
-
-                            <p>
-                                01 23 45 67 89
-                            </p>
-
-                        </div>
-
-                    </div>
+                <h2 class="mb-4">
+                    Nos coordonnées
+                </h2>
 
 
-                    <div class="contact-item">
+                <div class="mb-4">
 
-                        <div class="contact-icon">
-                            📧
-                        </div>
+                    <h3 class="h5">
+                        📍 Adresse
+                    </h3>
 
-                        <div class="contact-details">
-
-                            <h3>Email</h3>
-
-                            <p>
-                                info@voyageaventure.fr
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            🕒
-                        </div>
-
-                        <div class="contact-details">
-
-                            <h3>Horaires</h3>
-
-                            <p>
-                                Lun-Ven: 9h-18h<br>
-                                Sam: 10h-16h
-                            </p>
-
-                        </div>
-
-                    </div>
+                    <p class="text-muted">
+                        123 Rue des Voyages<br>
+                        75001 Paris, France
+                    </p>
 
                 </div>
 
 
-                <div class="contact-form-container">
+                <div class="mb-4">
 
-                    <h2>Envoyez-nous un message</h2>
+                    <h3 class="h5">
+                        📞 Téléphone
+                    </h3>
 
+                    <p class="text-muted">
+                        01 23 45 67 89
+                    </p>
 
-                    <form class="contact-form">
-
-
-                        <div class="mb-3"> <!--  margin-bottom spacing -->
-
-                            <label for="name" class="form-label">
-                                Nom complet
-                            </label>
-                            <!--  form-label styles the label -->
-
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                class="form-control"
-                                required>
-                            <!--  form-control styles the input -->
-
-                        </div>
+                </div>
 
 
-                        <div class="mb-3">
+                <div class="mb-4">
 
-                            <label for="email" class="form-label">
-                                Adresse email
-                            </label>
+                    <h3 class="h5">
+                        📧 Email
+                    </h3>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                class="form-control"
-                                required>
+                    <p class="text-muted">
+                        info@voyageaventure.fr
+                    </p>
 
-                        </div>
+                </div>
 
 
-                        <div class="mb-3">
+                <div class="mb-4">
 
-                            <label for="phone" class="form-label">
-                                Téléphone
-                            </label>
+                    <h3 class="h5">
+                        🕒 Horaires
+                    </h3>
 
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                class="form-control">
+                    <p class="text-muted">
+                        Lun-Ven : 9h-18h<br>
+                        Sam : 10h-16h
+                    </p>
 
-                        </div>
+                </div>
 
-
-                        <div class="mb-3">
-
-                            <label for="destination" class="form-label">
-                                Destination souhaitée
-                            </label>
-
-                            <select
-                                id="destination"
-                                name="destination"
-                                class="form-select">
-                                <!--  form-select styles dropdowns -->
-
-                                <option value="">
-                                    Choisissez une destination
-                                </option>
-
-                                <option value="europe">
-                                    Europe
-                                </option>
-
-                                <option value="asie">
-                                    Asie
-                                </option>
-
-                                <option value="amerique">
-                                    Amérique
-                                </option>
-
-                                <option value="afrique">
-                                    Afrique
-                                </option>
-
-                                <option value="oceanie">
-                                    Océanie
-                                </option>
-
-                            </select>
-
-                        </div>
+            </div>
 
 
-                        <div class="mb-3">
+            <!-- CONTACT FORM -->
+            <div class="col-md-7">
+                <!-- 
+                     col-md-7 = takes 7 of 12 columns -->
 
-                            <label for="budget" class="form-label">
-                                Budget approximatif
-                            </label>
+                <div class="card shadow-sm">
+                    <!-- 
+                         card = card component
+                         shadow-sm = small shadow -->
 
-                            <select
-                                id="budget"
-                                name="budget"
-                                class="form-select">
+                    <div class="card-body p-4">
+                        <!-- 
+                             card-body = content area of the card
+                             p-4 = padding -->
 
-                                <option value="">
-                                    Sélectionnez votre budget
-                                </option>
-
-                                <option value="500-1000">
-                                    500€ - 1000€
-                                </option>
-
-                                <option value="1000-2000">
-                                    1000€ - 2000€
-                                </option>
-
-                                <option value="2000-3000">
-                                    2000€ - 3000€
-                                </option>
-
-                                <option value="3000+">
-                                    Plus de 3000€
-                                </option>
-
-                            </select>
-
-                        </div>
+                        <h2 class="mb-4">
+                            Envoyez-nous un message
+                        </h2>
 
 
-                        <div class="mb-3">
-
-                            <label for="message" class="form-label">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="6"
-                                class="form-control"
-                                required>
-                            </textarea>
-
-                        </div>
+                        <form>
 
 
-                        <div class="form-check mb-3">
-                            <!--  form-check styles checkbox groups -->
+                            <!-- NAME -->
+                            <div class="mb-3">
+                                <!--  mb-3 adds bottom margin -->
 
-                            <input
-                                type="checkbox"
-                                id="offers"
-                                class="form-check-input"
-                                required>
-                            <!--  form-check-input styles the checkbox -->
+                                <label for="name" class="form-label">
+                                    Nom complet
+                                </label>
+                                <!--  form-label styles labels -->
 
-                            <label
-                                for="offers"
-                                class="form-check-label">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Votre nom complet"
+                                    required
+                                >
+                                <!--  form-control styles input fields -->
+
+                            </div>
+
+
+                            <!-- EMAIL + PHONE -->
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+                                    <!-- 
+                                         col-md-6 = 50% width on medium screens and bigger -->
+
+                                    <label for="email" class="form-label">
+                                        Adresse email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-control"
+                                        placeholder="nom@email.com"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label for="phone" class="form-label">
+                                        Téléphone
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="form-control"
+                                        placeholder="06 12 34 56 78"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- DESTINATION -->
+                            <div class="mb-3">
+
+                                <label for="destination" class="form-label">
+                                    Destination souhaitée
+                                </label>
+
+                                <select
+                                    id="destination"
+                                    name="destination"
+                                    class="form-select"
+                                >
+                                    <!--  form-select styles dropdown menus -->
+
+                                    <option value="">
+                                        Choisissez une destination
+                                    </option>
+
+                                    <option value="europe">
+                                        Europe
+                                    </option>
+
+                                    <option value="asie">
+                                        Asie
+                                    </option>
+
+                                    <option value="amerique">
+                                        Amérique
+                                    </option>
+
+                                    <option value="afrique">
+                                        Afrique
+                                    </option>
+
+                                    <option value="oceanie">
+                                        Océanie
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- BUDGET -->
+                            <div class="mb-3">
+
+                                <label for="budget" class="form-label">
+                                    Budget approximatif
+                                </label>
+
+                                <select
+                                    id="budget"
+                                    name="budget"
+                                    class="form-select"
+                                >
+
+                                    <option value="">
+                                        Sélectionnez votre budget
+                                    </option>
+
+                                    <option value="500-1000">
+                                        500€ - 1000€
+                                    </option>
+
+                                    <option value="1000-2000">
+                                        1000€ - 2000€
+                                    </option>
+
+                                    <option value="2000-3000">
+                                        2000€ - 3000€
+                                    </option>
+
+                                    <option value="3000+">
+                                        Plus de 3000€
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MESSAGE -->
+                            <div class="mb-3">
+
+                                <label for="message" class="form-label">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    class="form-control"
+                                    placeholder="Écrivez votre message..."
+                                    required
+                                ></textarea>
+                                <!--  form-control also styles textarea -->
+
+                            </div>
+
+
+                            <!-- CHECKBOX -->
+                            <div class="form-check mb-4">
+                                <!-- 
+                                     form-check = checkbox container
+                                     mb-4 = bottom margin -->
+
+                                <input
+                                    type="checkbox"
+                                    id="offers"
+                                    name="offers"
+                                    class="form-check-input"
+                                    required
+                                >
+                                <!--  form-check-input styles checkbox -->
+
+                                <label
+                                    for="offers"
+                                    class="form-check-label"
+                                >
+                                    J'accepte de recevoir des informations sur vos offres
+                                </label>
                                 <!--  form-check-label styles checkbox label -->
 
-                                J'accepte de recevoir des informations sur vos offres
-
-                            </label>
-
-                        </div>
+                            </div>
 
 
-                        <button
-                            type="submit"
-                            class="btn btn-primary">
-                            <!--  btn creates button style -->
-                            <!--  btn-primary applies primary color -->
+                            <!-- SUBMIT BUTTON -->
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100"
+                            >
+                                Envoyer le message
+                            </button>
+                            <!-- 
+                                 btn = base button style
+                                 btn-primary = primary button color
+                                 w-100 = full width -->
 
-                            Envoyer le message
+                        </form>
 
-                        </button>
-
-                    </form>
+                    </div>
 
                 </div>
 
@@ -357,33 +423,51 @@
 
         </div>
 
-    </section>
+    </main>
 
 
-    <footer class="site-footer">
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <!-- 
+             bg-dark = dark background
+             text-white = white text
+             py-4 = vertical padding
+             mt-5 = top margin -->
 
-        <div class="container"> <!--  responsive centered container -->
+        <div class="container">
 
-            <div class="footer-content">
+            <div class="row">
 
-                <div class="footer-section">
+                <div class="col-md-6">
+                    <!--  takes half of the row on medium screens -->
 
-                    <h3>VoyageAventure</h3>
+                    <h3 class="h5">
+                        VoyageAventure
+                    </h3>
 
-                    <p>
+                    <p class="mb-0">
                         Votre partenaire voyage depuis 2015
                     </p>
 
                 </div>
 
 
-                <div class="footer-section">
+                <div class="col-md-6 text-md-end">
+                    <!-- 
+                         col-md-6 = half width
+                         text-md-end = aligns text right on medium screens and bigger -->
 
-                    <h3>Contact</h3>
+                    <h3 class="h5">
+                        Contact
+                    </h3>
 
-                    <p>📧 info@voyageaventure.fr</p>
+                    <p class="mb-1">
+                        📧 info@voyageaventure.fr
+                    </p>
 
-                    <p>📞 01 23 45 67 89</p>
+                    <p class="mb-0">
+                        📞 01 23 45 67 89
+                    </p>
 
                 </div>
 
@@ -393,6 +477,14 @@
 
     </footer>
 
-</body>
-</html>
 
+    <!-- Bootstrap-->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
